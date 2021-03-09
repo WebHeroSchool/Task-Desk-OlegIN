@@ -6,9 +6,9 @@ body{
     width: 80%;
     }
 .header {
-  padding:40px 0;
-  display:flex;
-  justify-content:space-between;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
     }
 .logo {
     width: 190px;
@@ -16,22 +16,13 @@ body{
     background: url('img/logo.svg');
       }
 .menu {
-  display:flex;
-    align-items:center;
+  display: flex;
+    align-items: center;
     }
 .menu__item {
     padding: 0 13px;
     }
-.menu__item {
-    padding: 0 13px;
-    }
-.menu__item {
-    padding: 0 13px;
-    }
-.menu__item {
-    padding: 0 13px;
-    }
-.menu__item :last-child {
+.menu__item: last-child {
   padding-right: 0;
    }
 .main-section {
