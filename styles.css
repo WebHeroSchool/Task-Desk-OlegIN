@@ -25,9 +25,3 @@ body{
 .menu__item: last-child {
   padding-right: 0;
    }
-.main-section {
-    border: dashed 1px red;
-   }
-   .title{
-         font-family: Roboto;
-   }
