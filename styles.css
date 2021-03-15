@@ -81,8 +81,8 @@ body {
 }
 
  .main {
-   padding: 0 63% 100px 0;
-   background: top right no-repeat url(img/mainming.svg);
+  padding: 0 64% 300px 0;
+  background: top right no-repeat url(img/mainming.svg);
 }
 
 .main__title {
@@ -109,7 +109,7 @@ body {
   border-radius: 4px;
   text-decoration: none;
   transition: opacity .5s;
-}
+  }
 
 .main__button:hover {
   opacity: .5;
