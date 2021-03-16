@@ -80,9 +80,11 @@ body {
     margin-right: 0;
 }
 
- .main {
-  padding: 0 64% 300px 0;
-  background: top right no-repeat url(img/mainming.svg);
+ .main-content {
+   position: relative;
+   top: 4em;
+   padding: 0 63% 200px 0;
+   background: center right no-repeat url(img/mainming.svg);
 }
 
 .main__title {
