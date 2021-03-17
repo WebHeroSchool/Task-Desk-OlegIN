@@ -84,7 +84,6 @@ body {
  .main {
    padding: 2% 0 300px 0;
    background: top right no-repeat url(img/mainming.svg);
-   border: dashed 1px red;
 }
 
 .main__title {
