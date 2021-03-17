@@ -4,7 +4,8 @@ body {
 
 .wrapper {
   width: 80%;
-  margin: auto;
+  margin:auto;
+  border: dashed 1px red;
 }
 
 .header {
@@ -14,17 +15,17 @@ body {
 }
 
 .logo {
-  padding: 40px 0;
-  padding-left: 44px;
+  padding: 20px 0 0 44px;
   position: relative;
   font: bold 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
+  border: dashed 1px red;
   }
 
 .logo__circle {
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 30%;
+  transform: translateY(-60%);
   width: 28px;
   height: 28px;
   opacity: .7;
@@ -34,7 +35,7 @@ body {
 .logo__circle_color_blue {
   background: #C8DBFB;
   left: 8px;
-  top: 56%;
+  top: 37%;
 }
 
 .logo__circle_color_dark-blue {
@@ -44,12 +45,14 @@ body {
 .menu {
   display: flex;
   align-items: center;
+  margin-bottom: 5%
 }
 
 .menu__item {
   position: relative;
-  margin-right: 26px;
-  font: 500 18px/21px 'pt_serifbold', arial, helvetica, sans-serif;
+  margin-top: 7%;
+  margin-right: 21px;
+  font: 500 19px/21px 'pt_serifbold', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -77,26 +80,25 @@ body {
 }
 
  .menu__item:last-child {
-    margin-right: 0;
+    margin-right: 8px;
 }
 
- .main-content {
-   position: relative;
-   top: 4em;
-   padding: 0 63% 200px 0;
-   background: center right no-repeat url(img/mainming.svg);
+ .main {
+   padding: 2% 0 300px 0;
+   background: top right no-repeat url(img/mainming.svg);
+   border: dashed 1px red;
 }
 
 .main__title {
-  margin: 0 0 40px 0;
-  font: bold 50px/65px 'pt_serifbold', arial, helvetica, sans-serif;
-
+  margin: 3% 63% 38px 0;
+  font: bold 66px/83px 'pt_serifbold', arial, helvetica, sans-serif;
+  border: dashed 1px red;
 }
 
 .main__subtitle {
-  margin: 0 0 41px 0;
-  font: 18px/21px 'Roboto', arial, helvetica, sans-serif;
-}
+  margin: 0 70% 41px 0;
+  font: 22px/28px 'Roboto', arial, helvetica, sans-serif;
+  }
 
 .main__title-text_highlight {
   background: #ECF3FF;
@@ -104,7 +106,7 @@ body {
 
 .main__button {
   display: inline-block;
-  padding: 14px 16px;
+  padding: 18px 31px 18px 22px;
   font: 18px/21px 'Roboto', arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
