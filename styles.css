@@ -5,7 +5,6 @@ body {
 .wrapper {
   width: 80%;
   margin:auto;
-  border: dashed 1px red;
 }
 
 .header {
@@ -18,8 +17,7 @@ body {
   padding: 20px 0 0 44px;
   position: relative;
   font: bold 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
-  border: dashed 1px red;
-  }
+}
 
 .logo__circle {
   position: absolute;
@@ -92,7 +90,6 @@ body {
 .main__title {
   margin: 3% 63% 38px 0;
   font: bold 66px/83px 'pt_serifbold', arial, helvetica, sans-serif;
-  border: dashed 1px red;
 }
 
 .main__subtitle {
