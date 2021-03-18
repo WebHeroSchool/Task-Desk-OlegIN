@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-  padding: 20px 0 0 44px;
+  padding: 21px 0 2% 49px;
   position: relative;
   font: bold 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
 }
@@ -48,9 +48,9 @@ body {
 
 .menu__item {
   position: relative;
-  margin-top: 7%;
-  margin-right: 21px;
-  font: 500 19px/21px 'pt_serifbold', arial, helvetica, sans-serif;
+  margin-top: 8%;
+  margin-right: 20px;
+  font: 500 19px/20px 'pt_serifbold', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -62,7 +62,7 @@ body {
     display: block;
     content: "";
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: #0056EC;
     opacity: 0;
     transition: opacity .5s, width .5s;
@@ -78,17 +78,17 @@ body {
 }
 
  .menu__item:last-child {
-    margin-right: 8px;
+    margin-right: 3px;
 }
 
  .main {
-   padding: 2% 0 300px 0;
+   padding: 2% 3% 300px 5px;
    background: top right no-repeat url(img/mainming.svg);
 }
 
 .main__title {
-  margin: 3% 63% 38px 0;
-  font: bold 66px/83px 'pt_serifbold', arial, helvetica, sans-serif;
+  margin: 3% 65% 35px 0;
+  font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
 .main__subtitle {
@@ -102,7 +102,7 @@ body {
 
 .main__button {
   display: inline-block;
-  padding: 18px 31px 18px 22px;
+  padding: 19px 33px 19px 22px;
   font: 18px/21px 'Roboto', arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
