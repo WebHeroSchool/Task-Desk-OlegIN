@@ -83,19 +83,18 @@
 }
 
  .main-content {
-  padding: 0 0 350px 0px;
-  margin: 0% 0% 0px 0;
+  padding-bottom: 350px;
   background: right top no-repeat url(img/mainming.svg);
 }
 
 .main__title {
-  padding: 69px 48% 0 0px;
+  padding: 69px 48% 0 0;
   margin-bottom: 36px;
   font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
 .main__subtitle {
-  padding: 0% 48% 0px 0px;
+  padding-right: 48%;
   margin: 0 24% 42px 0;
   font: 22px/26px 'Roboto', arial, helvetica, sans-serif;
   }
