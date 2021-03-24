@@ -5,7 +5,7 @@
 .wrapper {
   width: 80%;
   margin-top: 18px;
-  margin-left: 190px;
+  margin-left: 187px;
 }
 
 .header {
@@ -15,7 +15,7 @@
 }
 
 .logo {
-    padding: 24px 0 2% 42px;
+    padding: 23px 0 2% 45px;
     position: relative;
     font: bold 24px/30px 'pt_serifbold', arial, helvetica, sans-serif;
 }
@@ -50,7 +50,7 @@
 .menu__item {
   position: relative;
   margin-top: 8%;
-  margin-right: 24px;
+  margin-right: 23px;
   font: 500 18px/21px 'pt_serifbold', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -88,7 +88,7 @@
 }
 
 .main__title {
-  padding: 69px 48% 0 0;
+  padding: 69px 49% 0 0;
   margin-bottom: 36px;
   font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
@@ -105,7 +105,7 @@
 
 .main__button {
   display: inline-block;
-  padding: 18px 35px 21px 21px;
+  padding: 18px 35px 21px 23px;
   font: 18px/19px 'Roboto', arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
