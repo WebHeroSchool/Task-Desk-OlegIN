@@ -1,10 +1,11 @@
-bbody {
-  margin: 15px 10px 0 0;
+.body {
+  margin: 0;
 }
 
 .wrapper {
   width: 80%;
-  margin:auto;
+  margin-top: 18px;
+  margin-left: 190px;
 }
 
 .header {
@@ -14,9 +15,9 @@ bbody {
 }
 
 .logo {
-  padding: 21px 0 2% 49px;
-  position: relative;
-  font: bold 24px/31px 'pt_serifbold', arial, helvetica, sans-serif;
+    padding: 24px 0 2% 42px;
+    position: relative;
+    font: bold 24px/30px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
 .logo__circle {
@@ -34,7 +35,7 @@ bbody {
   background: #C8DBFB;
   left: 8px;
   top: 37%;
-}
+  }
 
 .logo__circle_color_dark-blue {
   background: #0056EC;
@@ -44,13 +45,13 @@ bbody {
   display: flex;
   align-items: center;
   margin-bottom: 5%;
-}
+ }
 
 .menu__item {
   position: relative;
   margin-top: 8%;
-  margin-right: 19px;
-  font: 500 19px/21px 'pt_serifbold', arial, helvetica, sans-serif;
+  margin-right: 24px;
+  font: 500 18px/21px 'pt_serifbold', arial, helvetica, sans-serif;
   color: #000;
   text-decoration: none;
   transition: opacity .5s;
@@ -74,26 +75,29 @@ bbody {
 
  .menu__item:hover::after, .menu__item_active::after {
    opacity: 1;
-   width: 100%
+   width: 100%;
 }
 
  .menu__item:last-child {
     margin-right: 1px;
 }
 
- .main {
-   padding: 2% 3% 300px 5px;
-   background: top right no-repeat url(img/mainming.svg);
+ .main-content {
+  padding: 0 0 350px 0px;
+  margin: 0% 0% 0px 0;
+  background: right top no-repeat url(img/mainming.svg);
 }
 
 .main__title {
-  margin: 3% 65% 35px 0;
+  padding: 69px 48% 0 0px;
+  margin-bottom: 36px;
   font: bold 66px/87px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
 .main__subtitle {
-  margin: 0 70% 41px 0;
-  font: 22px/28px 'Roboto', arial, helvetica, sans-serif;
+  padding: 0% 48% 0px 0px;
+  margin: 0 24% 42px 0;
+  font: 22px/26px 'Roboto', arial, helvetica, sans-serif;
   }
 
 .main__title-text_highlight {
@@ -102,14 +106,14 @@ bbody {
 
 .main__button {
   display: inline-block;
-  padding: 19px 33px 19px 22px;
-  font: 18px/21px 'Roboto', arial, helvetica, sans-serif;
+  padding: 18px 35px 21px 21px;
+  font: 18px/19px 'Roboto', arial, helvetica, sans-serif;
   color: #fff;
   background: #0056EC;
   border-radius: 4px;
   text-decoration: none;
   transition: opacity .5s;
-  }
+}
 
 .main__button:hover {
   opacity: .5;
