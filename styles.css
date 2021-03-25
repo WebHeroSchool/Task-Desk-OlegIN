@@ -93,15 +93,17 @@
   font: bold 66px/88px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
+.main__title span {
+  height: 200px;
+  background: linear-gradient(to bottom, #fff 20%, #ECF3FF 20%, #ECF3FF 90%, #fff 90%, #fff 10%);
+}
+
 .main__subtitle {
   padding-right: 48%;
   margin: 0 24% 40px 0;
   font: 22px/26px 'Roboto', arial, helvetica, sans-serif;
   }
 
-.main__title-text_highlight {
-  background: #ECF3FF;
-}
 
 .main__button {
   display: inline-block;
@@ -112,10 +114,6 @@
   border-radius: 4px;
   text-decoration: none;
   transition: opacity .5s;
-}
-
-.main__button:hover {
-  opacity: .5;
 }
 
 .main__button:hover {
