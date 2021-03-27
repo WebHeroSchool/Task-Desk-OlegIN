@@ -10,13 +10,14 @@
 
 .header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   margin-bottom: 100px;
 }
 
-.logo {
+.logo__text {
     padding: 23px 0 2% 45px;
-    position: relative;
+    //position: relative;
     font: bold 24px/30px 'pt_serifbold', arial, helvetica, sans-serif;
 }
 
@@ -94,9 +95,12 @@
 }
 
 .main__title span {
-  height: 200px;
-  background: linear-gradient(to bottom, #fff 20%, #ECF3FF 20%, #ECF3FF 90%, #fff 90%, #fff 10%);
+background-position: left;
+width: 296px;
+height: 70px;
+background: linear-gradient(to bottom, #fff 20%, #ECF3FF 20%, #ECF3FF 90%, #fff 90%, #fff 10%);
 }
+
 
 .main__subtitle {
   padding-right: 48%;
@@ -118,4 +122,197 @@
 
 .main__button:hover {
   opacity: .5;
+}
+
+
+/*adoptation for mobile*/
+@media (max-width: 596px) {
+ body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin-left: 0;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.logo {
+    position: relative;
+    margin-left: 24px;
+  //  margin-top: 10px;
+}
+
+.logo__text {
+  display: none;
+  /*  padding: 23px 0 2% 45px;
+    //position: relative;
+    font: bold 24px/30px 'pt_serifbold', arial, helvetica, sans-serif;*/
+}
+
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 30%;
+  transform: translateY(-60%);
+  width: 28px;
+  height: 28px;
+  opacity: .7;
+  border-radius: 50%;
+  }
+
+.logo__circle_color_blue {
+  left: 10px;
+  top: 31px;
+  background: #C8DBFB;
+}
+
+.logo__circle_color_dark-blue {
+  //left: -58px;
+  top: 24px;
+  background: #0056EC;
+  opacity: 0.7;
+}
+
+.menu {
+  display: none;
+}
+
+ .main-content {
+   margin-top: 18%;
+   text-align: center;
+   margin-left: 10%;
+   padding: 50% 74% 0 0;
+   background-size: 88%;
+   background-position: top center;
+   background-image: no-repeat url(img/mainming.svg);
+}
+
+.main__title {
+  margin-left: 30%;
+  width: 267px;
+  height: 96px;
+  margin-bottom: 44px;
+  font: bold 30px/39px 'pt_serifbold', arial, helvetica, sans-serif;
+}
+
+.main__title span {
+background: linear-gradient(to bottom, #fff 20%, #ECF3FF 20%, #ECF3FF 90%, #fff 90%, #fff 10%);
+}
+
+
+.main__subtitle {
+  margin: 10px;
+  width: 275px;
+  height: 57px;
+  margin-bottom: 25px;
+  font: 700 16px/19px 'Roboto', arial, helvetica, sans-serif;
+  }
+
+
+.main__button {
+  position: absolute;
+  display: inline-block;
+  padding: 18px 35px 21px 23px;
+  width: 209px;
+  font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056EC;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+
+.main__button:hover {
+  opacity: .5;
+    }
+}
+@media (max-height: 650px) and (max-width: 373px) {
+  body {
+    height: 690px;
+  }
+}
+
+/*бургер-меню*/
+#menu__toggle {
+  opacity: 0;
+}
+.menu__btn {
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 40px;
+  width: 25px;
+  cursor: pointer;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #0056EC;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  z-index: 1;
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 178px 0;
+  list-style: none;
+  text-align: center;
+  align-items: center;
+  background-color: #fff;
+}
+.menu__item_mobile {
+  display: block;
+  padding: 12px 24px;
+  color: #000;
+  font-style: normal;
+  font: 700 30px/36px 'Roboto';
+  text-decoration: none;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+/*скрывает бургер-меню на высоком разрешении*/
+@media (min-width: 597px) {
+  .hamburger-menu {
+    display: none;
+  }
+  .menu__box {
+    display: none;
+  }
 }
