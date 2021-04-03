@@ -34,11 +34,21 @@
   border-radius: 50%;
 }
 
+@keyframes glowing {
+      0% { background-color: #0056EC; box-shadow: 0 0 10px #0056EC; }
+      50% { background-color: #C8DBFB; box-shadow: 0 0 20px #C8DBFB; }
+      100% { background-color: #0056EC; box-shadow: 0 0 10px #0056EC; }
+      }
+
+.main__button {
+animation: glowing 2s infinite;
+}
+
 @media (min-width: 1367px) {
 .wrapper {
   width: 80%;
   margin-top: 18px;
-  margin-left: 187px;
+  margin-left: 14%;
 }
 
 .header {
@@ -164,7 +174,7 @@
 @media (min-width: 1025px) and (max-width: 1366px) {
 .wrapper {
   width:71%;
-  margin: 18px 0px 0px 187px;
+  margin: 18px 0px 0px 14%;
 }
 
 .header {
@@ -413,11 +423,139 @@
 
 }
 
+/*adoptation for 1024*768*/
+@media (min-width: 768px) and (max-width: 1024px) {
+.wrapper {
+  width: 96%;
+  margin-top: 19px;
+  margin-left: 1.5%;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  padding: 9px 10px 10px 25px;
+  margin-bottom: 81px;
+}
+
+.logo__text {
+  padding: 13px 45px;
+  font: bold 24px/30px 'pt_serifbold', arial, helvetica, sans-serif;
+}
+
+.logo__circle {
+  position: absolute;
+  left: 22px;
+  top: 32%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  opacity: .7;
+  border-radius: 50%;
+}
+
+.logo__circle_color_blue {
+  background: #C8DBFB;
+  left: 30px;
+  top: 39%;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056EC;
+}
+
+.main-content {
+  padding-bottom: 150px;
+  background-size: 54% !important;
+  background: 98% -20% no-repeat url(img/mainming.svg);
+}
+
+.main__title {
+  padding: 4px 42% 0px 23px;
+  margin-bottom: 40px;
+  font: 700 50px/66px 'pt_serifbold', arial, helvetica, sans-serif;
+}
+
+.main__subtitle {
+  padding-right: 29%;
+  margin: 0px 31% 42px 23px;
+  font: 500 18px/21px 'Roboto', arial, helvetica, sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5%;
+ }
+
+.menu__item {
+  position: relative;
+  margin-top: 8%;
+  margin-right: 27px;
+  font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+  color: #000;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+
+.menu__item:after {
+  position: absolute;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .5s, width .5s;
+}
+
+.menu__item:hover::after, .menu__item_active::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.main__button {
+  display: inline-block;
+  padding: 15px 24px 13px 20px;
+  margin-left: 23px;
+  margin-top: -2px;
+  font: 500 14px/16px 'Roboto', arial, helvetica, sans-serif;
+  color: #fff;
+  background: #0056EC;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity .5s;
+}
+
+.main__subtitle-mobile {
+  display: none;
+}
+
+.main__image-mobile {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-left: 11px;
+}
+
+}
+
 /*adoptation for mobile*/
 @media (max-width: 767px) {
  .wrapper {
   width: 94%;
-  margin-left: 0;
+  margin-left: auto;
+  margin-right: 8%
 }
 
 .main-content__button {
@@ -432,7 +570,7 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  margin: 16px 0 -7px 14px;
+  margin: 4% 0 -6px 5%;;
 }
 
 .footer {
@@ -466,7 +604,7 @@
 }
 
 .logo__circle_color_dark-blue {
-  top: 24px;
+  top: 125%;
   background: #0056EC;
   opacity: 0.7;
 }
@@ -476,7 +614,7 @@
 }
 
 .main__image-mobile {
-  margin: 17% 12% 22px 40px;
+  margin: 17% 12% 7% 12%;;
   text-align: center;
   display: block;
 }
@@ -540,6 +678,7 @@
   width: 100%;
   height: 3px;
   background-color: #0056EC;
+  transition-duration: .25s;
 }
 
 .menu__btn > span::before {
@@ -566,6 +705,7 @@
   text-align: center;
   align-items: center;
   background-color: #fff;
+  transition-duration: .25s;
 }
 
 .menu__item_mobile {
@@ -575,6 +715,7 @@
   font-style: normal;
   font: 700 30px/36px 'Roboto';
   text-decoration: none;
+  transition-duration: .25s;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
