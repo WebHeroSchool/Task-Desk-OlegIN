@@ -48,7 +48,7 @@ animation: glowing 2s infinite;
 .wrapper {
   width: 80%;
   margin-top: 18px;
-  margin-left: 14%;
+  margin-left: 10%;
 }
 
 .header {
@@ -125,7 +125,7 @@ animation: glowing 2s infinite;
   margin-right: 1px;
 }
 
- .main-content {
+ .main {
   padding-bottom: 250px;
   background: 101% -1% no-repeat url(img/mainming.svg);
 }
@@ -211,7 +211,7 @@ animation: glowing 2s infinite;
   background: #0056EC;
 }
 
-.main-content {
+.main {
   padding-bottom: 150px;
   background-size: 54% !important;
   background: 99% -11% no-repeat url(img/mainming.svg);
@@ -338,7 +338,7 @@ animation: glowing 2s infinite;
   background: #0056EC;
 }
 
-.main-content {
+.main {
   padding-bottom: 150px;
   background-size: 54% !important;
   background: 98% -20% no-repeat url(img/mainming.svg);
@@ -465,7 +465,7 @@ animation: glowing 2s infinite;
   background: #0056EC;
 }
 
-.main-content {
+.main {
   padding-bottom: 150px;
   background-size: 54% !important;
   background: 98% -20% no-repeat url(img/mainming.svg);
